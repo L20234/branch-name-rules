@@ -8,8 +8,8 @@ inputs:
     required: true
   regex:
     # description must include full branch name including prefixes and project name (if applicable)
-    # example '((teamshare)|(feature/[A-Z]*-[0-9]*)|(release/[0-9]{1,2}.[0-9]{1,2}.[0-9]{1,5}))'
-    # this will match 'teamshare' or 'feature/JIRAKEY-123456' or 'release/01.10.12345'
+    # example '((develop)|(feature/[A-Z]*-[0-9]*)|(release/[0-9]{1,2}.[0-9]{1,2}.[0-9]{1,5}))'
+    # this will match 'develop' or 'feature/JIRAKEY-123456' or 'release/01.10.12345'
     description: "Semicolon separated list of Regex patterns"
     required: true
   delete_branch:
