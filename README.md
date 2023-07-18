@@ -38,7 +38,7 @@ jobs:
         uses: L20234/branch-name-rules@v2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          regex: "^(master|teamshare)$;^(feature)/([A-Z0-9]{2,6}-[0-9]{1,8}([-_]{1}[-_a-zA-Z0-9]*)*)$;^(hotfix)/([-_a-zA-Z0-9]*)$;^(release)/([0-9]{1,2}.[0-9]{1,2}.[0-9]{1,2})$"
+          regex: "^(main|develop)$;^(feature)/([A-Z0-9]{2,6}-[0-9]{1,8}([-_]{1}[-_a-zA-Z0-9]*)*)$;^(bugfix)/([-_a-zA-Z0-9]*)$;^(release)/([0-9]{1,2}.[0-9]{1,2}.[0-9]{1,2})$"
           delete_branch: "true"
 ```
 #### Example 2:
@@ -60,6 +60,6 @@ jobs:
         uses: L20234/branch-name-rules@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          regex: ^(master|product_teamshare)$;^(project_1x|project_2x)/(teamshare)$;^(project_1x|project_2x)/(feature)/([A-Z0-9]{2,6}-[0-9]{1,8}([-_]{1}[-_a-zA-Z0-9]*)*)$;^(project_1x|project_2x)/(hotfix)/([-_a-zA-Z0-9]*)$;^(project_1x|project_2x)/(release)/([0-9]{1,2}.[0-9]{1,2}.[0-9]{1,2})$
+          regex: ^(main|product_develop)$;^(project_1x|project_2x)/(develop)$;^(project_1x|project_2x)/(feature)/([A-Z0-9]{2,6}-[0-9]{1,8}([-_]{1}[-_a-zA-Z0-9]*)*)$;^(project_1x|project_2x)/(bugfix)/([-_a-zA-Z0-9]*)$;^(project_1x|project_2x)/(release)/([0-9]{1,2}.[0-9]{1,2}.[0-9]{1,2})$
           delete_branch: true
 ```
